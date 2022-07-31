@@ -416,7 +416,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - intsall_awscli
+      - install_awscli
       - run:
           name: Get old stack workflow id
           command: |
