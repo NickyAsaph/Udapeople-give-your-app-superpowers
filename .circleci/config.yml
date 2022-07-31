@@ -400,7 +400,7 @@ jobs:
               list-exports --query "Exports[?Name==\'WorkflowID\'].Value" \
               --no-paginate --output text)
             echo "Old Workflow ID: $OLD_WORKFLOW_ID"
-            curl -k https://kvdb.io/TQaU3yveweMt6YSdc3s5jN/old_workflow_id -d "${OLD_WORKFLOW_ID}"
+            curl -k https://kvdb.io/TQaU3yveweMt6YSdc3s5jN/OLD_WORKFLOW_ID -d "${OLD_WORKFLOW_ID}"
       - run:
           name: Update cloudfront distribution
           command: | 
